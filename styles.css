@@ -1,0 +1,172 @@
+/* Mengatur gaya umum untuk elemen body */
+body {
+  font-family: "Poppins", sans-serif; /* Menggunakan font 'Poppins' sebagai font utama */
+  display: flex; /* Mengatur elemen body menggunakan Flexbox */
+  justify-content: center; /* Mengatur konten agar terpusat secara horizontal */
+  align-items: center; /* Mengatur konten agar terpusat secara vertikal */
+  height: 100vh; /* Mengatur tinggi elemen body sama dengan tinggi viewport */
+  margin: 0; /* Menghapus margin default */
+  background-color: #2c3e50; /* Mengatur warna latar belakang */
+  color: #ecf0f1; /* Mengatur warna teks */
+  overflow-y: auto; /* Menambahkan scrollbar vertikal jika diperlukan */
+  padding: 20px; /* Menambahkan padding di sekitar konten */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'container' */
+.container {
+  text-align: center; /* Mengatur teks agar terpusat di dalam kontainer */
+  background: #34495e; /* Mengatur warna latar belakang kontainer */
+  padding: 30px; /* Menambahkan padding di dalam kontainer */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan pada kontainer */
+  border-radius: 15px; /* Mengatur sudut kontainer menjadi melengkung */
+  max-width: 100%; /* Mengatur lebar maksimal kontainer */
+  width: 400px; /* Mengatur lebar kontainer */
+  overflow: hidden; /* Menyembunyikan konten yang melampaui batas kontainer */
+}
+
+/* Mengatur gaya untuk elemen dengan tag <h1> */
+h1 {
+  margin-bottom: 20px; /* Menambahkan jarak bawah dari elemen <h1> */
+  color: #ecf0f1; /* Mengatur warna teks elemen <h1> */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'editor' */
+.editor {
+  position: relative; /* Mengatur posisi elemen menjadi relatif */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'upload-group' */
+.upload-group {
+  display: flex; /* Menggunakan Flexbox untuk elemen dalam grup upload */
+  flex-direction: column; /* Mengatur elemen agar ditata secara vertikal */
+  align-items: center; /* Mengatur elemen agar terpusat secara horizontal */
+  margin-bottom: 15px; /* Menambahkan jarak bawah dari grup upload */
+  width: 100%; /* Mengatur lebar grup upload */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'file-container' */
+.file-container {
+  display: flex; /* Menggunakan Flexbox untuk elemen dalam kontainer berkas */
+  align-items: center; /* Mengatur elemen agar terpusat secara vertikal */
+  width: 100%; /* Mengatur lebar kontainer berkas */
+}
+
+/* Mengatur gaya untuk input file dengan class 'custom-file-input' */
+.custom-file-input {
+  background-color: #95a5a6; /* Mengatur warna latar belakang input file */
+  color: #ecf0f1; /* Mengatur warna teks input file */
+  border: 1px solid #bdc3c7; /* Mengatur warna dan ketebalan border input file */
+  border-radius: 8px; /* Mengatur sudut input file menjadi melengkung */
+  padding: 8px; /* Menambahkan padding di dalam input file */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat mengarahkan ke input file */
+  font-size: 14px; /* Mengatur ukuran font pada input file */
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran total */
+  display: inline-block; /* Mengatur elemen input file sebagai elemen inline-block */
+}
+
+/* Mengatur gaya untuk pseudo-elemen sebelum input file */
+.custom-file-input::before {
+  content: "Pilih Berkas"; /* Menambahkan teks sebelum elemen input file */
+  display: inline-block; /* Mengatur pseudo-elemen sebagai inline-block */
+  background: #e74c3c; /* Mengatur warna latar belakang pseudo-elemen */
+  color: white; /* Mengatur warna teks pseudo-elemen */
+  padding: 8px 16px; /* Menambahkan padding di dalam pseudo-elemen */
+  border-radius: 8px; /* Mengatur sudut pseudo-elemen menjadi melengkung */
+  font-size: 16px; /* Mengatur ukuran font pada pseudo-elemen */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat mengarahkan ke pseudo-elemen */
+  text-align: center; /* Mengatur teks agar terpusat di dalam pseudo-elemen */
+}
+
+/* Menyembunyikan tombol upload default pada input file */
+.custom-file-input::-webkit-file-upload-button {
+  display: none; /* Menyembunyikan tombol upload default */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'file-name' */
+.file-name {
+  font-size: 14px; /* Mengatur ukuran font pada nama berkas */
+  color: #ecf0f1; /* Mengatur warna teks nama berkas */
+  margin-left: 15px; /* Menambahkan jarak kiri dari nama berkas */
+  white-space: nowrap; /* Mencegah teks nama berkas membungkus ke baris berikutnya */
+  overflow: hidden; /* Menyembunyikan teks yang melampaui batas elemen */
+  text-overflow: ellipsis; /* Menambahkan elipsis jika teks terlalu panjang */
+  flex: 1; /* Memungkinkan nama berkas untuk mengambil sisa ruang yang tersedia */
+  min-width: 0; /* Mengatur lebar minimal nama berkas menjadi 0 */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'no-file-chosen' */
+.no-file-chosen {
+  color: #bdc3c7; /* Mengatur warna teks untuk pesan 'tidak ada berkas yang dipilih' */
+  font-size: 14px; /* Mengatur ukuran font pada pesan tersebut */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'canvas-container' */
+.canvas-container {
+  width: 100%; /* Mengatur lebar kontainer kanvas */
+  margin: 20px 0; /* Menambahkan jarak vertikal dari kontainer kanvas */
+  border: 2px solid #95a5a6; /* Mengatur warna dan ketebalan border kontainer kanvas */
+  border-radius: 15px; /* Mengatur sudut kontainer kanvas menjadi melengkung */
+  background-color: #ecf0f1; /* Mengatur warna latar belakang kontainer kanvas */
+  overflow: hidden; /* Menyembunyikan konten yang melampaui batas kontainer */
+  padding: 0; /* Menghapus padding di dalam kontainer kanvas */
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran total */
+}
+
+/* Mengatur gaya untuk elemen canvas */
+canvas {
+  width: 100%; /* Mengatur lebar kanvas */
+  height: 100%; /* Mengatur tinggi kanvas */
+  cursor: move; /* Mengubah kursor menjadi 'move' saat mengarahkan ke kanvas */
+  display: block; /* Mengatur kanvas sebagai elemen block */
+  background-color: #ecf0f1; /* Mengatur warna latar belakang kanvas */
+}
+
+/* Mengatur gaya untuk elemen input dengan tipe 'range' */
+input[type="range"] {
+  width: 100%; /* Mengatur lebar elemen input range */
+  margin-top: 15px; /* Menambahkan jarak atas dari elemen input range */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'controls' */
+.controls {
+  display: flex; /* Menggunakan Flexbox untuk elemen kontrol */
+  flex-direction: column; /* Mengatur elemen agar ditata secara vertikal */
+  gap: 15px; /* Menambahkan jarak antar elemen kontrol */
+  margin-top: 20px; /* Menambahkan jarak atas dari elemen kontrol */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'custom-btn' */
+.custom-btn {
+  padding: 12px 24px; /* Menambahkan padding di dalam tombol */
+  font-size: 16px; /* Mengatur ukuran font pada tombol */
+  background-color: #e74c3c; /* Mengatur warna latar belakang tombol */
+  color: white; /* Mengatur warna teks tombol */
+  border: none; /* Menghapus border tombol */
+  border-radius: 30px; /* Mengatur sudut tombol menjadi melengkung */
+  cursor: pointer; /* Mengubah kursor menjadi pointer saat mengarahkan ke tombol */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan efek transisi untuk perubahan transformasi dan bayangan tombol */
+  max-width: 250px; /* Mengatur lebar maksimum tombol */
+  width: 100%; /* Mengatur lebar tombol menjadi 100% dari kontainer */
+  box-sizing: border-box; /* Memastikan padding dan border termasuk dalam ukuran total tombol */
+  text-align: center; /* Mengatur teks agar terpusat di dalam tombol */
+  margin: 20px auto; /* Mengatur margin otomatis untuk memusatkan tombol secara horizontal dan menambahkan jarak vertikal */
+}
+
+/* Mengatur gaya untuk tombol saat hover */
+.custom-btn:hover {
+  transform: translateY(-3px); /* Menggeser tombol ke atas sedikit saat hover */
+  box-shadow: 0 8px 16px rgba(231, 76, 60, 0.4); /* Menambahkan bayangan pada tombol saat hover */
+}
+
+/* Mengatur gaya untuk elemen dengan class 'container' pada layar dengan tinggi maksimum 800px */
+@media (max-height: 800px) {
+  .container {
+    height: 100%; /* Mengatur tinggi kontainer menjadi 100% */
+    overflow-y: auto; /* Menambahkan scrollbar vertikal jika diperlukan */
+    max-height: 100vh; /* Mengatur tinggi maksimum kontainer menjadi 100vh */
+  }
+
+  body {
+    height: auto; /* Mengatur tinggi body menjadi otomatis */
+  }
+}
